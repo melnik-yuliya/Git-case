@@ -141,7 +141,7 @@ Git преобразует информацию о коммитах с помо�
 ## Статусы файлов
 ```
 mermaid
-graph LR;
+flowchart TD
 A[файл untracked]-- git add --> B[файл staged + tracked];
 B -- файл изменён --> C[файл tracked + modified + staged];
 B -- файл закомичен --> D[файл committed + tracked];
