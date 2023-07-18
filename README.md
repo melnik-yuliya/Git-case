@@ -144,9 +144,9 @@ flowchart TD
 A[файл untracked]-- git add --> B{файл staged/tracked};
 B -- файл изменён --> C[файл modified/staged/tracked];
 B -- git commit --> D[файл tracked];
-C -- git commit --> D;
 C -- git add --> B;
 D -- файл изменён --> F[файл modified/tracked];
+F -- git add --> B;
 ```
 
 Статусом untracked помечается файл, о существовании которого Git знает, но не следит за изменениями в нём. Этот статус — противоположность tracked, в который попадают все файлы, отслеживаемые Git.
